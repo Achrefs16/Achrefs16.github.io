@@ -1,0 +1,94 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    font-weight: bold;
+
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+        padding-top: 20px;
+}
+
+footer {
+
+    bottom: 0;
+    width: 100%;
+}
+.sun {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4f4f4;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.sun::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/sun.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.5); /* Applique un flou et rend l'image plus sombre */
+    z-index: -1; /* Assure que l'image reste en arrière-plan */
+    transform: scale(1.1); /* Agrandit légèrement l'image pour couvrir après le flou */
+}
+
+.sun h1 {
+    position: relative;
+    z-index: 1; /* Le texte reste devant l'image floutée et sombre */
+    font-size: 3rem;
+    color: #fff;
+}
+.planet {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.planet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Assombrit l'image de fond */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* Le contenu reste devant l'image sombre */
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 10px;
+}

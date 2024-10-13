@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النظام الشمسي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">نظامنا الشمسي</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل الملاحة">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planets">الكواكب</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="more.html">المزيد</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-light text-black text-center py-3">
+        <h1>النظام الشمسي</h1>
+    </header>
+<section class=" sun">
+    <div class="container">
+    
+            <h2>ما هو النظام الشمسي؟</h2>
+            <p>النظام الشمسي هو النظام الكوكبي الذي يتكون من الشمس وجميع ما يدور حولها من أجرام.</p>
+    <a href="more.html"><button type="button" class="btn btn-light mt-4">اطلع على المزيد</button></a>
+     
+</div></section>
+    <main class="container ">
+        
+<section id="planets">
+    <h2 class="text-center py-3">الكواكب في النظام الشمسي</h2>
+    <div class="row">
+        <div class="col-md-4 planet" style="background-image: url('./img/mercury.jpg');">
+            <div class="content">
+                <h3>عطارد</h3>
+                <p>عطارد هو أقرب كوكب إلى الشمس.</p>
+                <button class="btn btn-light" onclick="toggleInfo('mercury-info')">عرض المزيد</button>
+                <div id="mercury-info" class="more-info" style="display: none;">
+                    <p><strong>المزيد عن عطارد:</strong></p>
+                    <p>عطارد هو الكوكب الأصغر في النظام الشمسي وليس لديه غلاف جوي، مما يجعله عرضة لدرجات الحرارة القصوى. يمكن أن تصل درجات الحرارة في النهار إلى 430 درجة مئوية، بينما تنخفض إلى -180 درجة مئوية في الليل. سطحه مليء بالفوهات مثل القمر.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 planet" style="background-image: url('./img/venus.jpg');">
+            <div class="content">
+                <h3>الزهرة</h3>
+                <p>الزهرة هو ثاني كوكب من حيث القرب من الشمس.</p>
+                <button class="btn btn-light" onclick="toggleInfo('venus-info')">عرض المزيد</button>
+                <div id="venus-info" class="more-info" style="display: none;">
+                    <p><strong>المزيد عن الزهرة:</strong></p>
+                    <p>الزهرة هو الكوكب الأكثر حرارةً في النظام الشمسي، بمتوسط درجة حرارة تبلغ حوالي 467 درجة مئوية. يتميز بوجود سحب كثيفة من حمض الكبريتيك، مما يجعله كوكبًا صعب الاستكشاف. يُعرف أيضًا بـ "كوكب الحب" بسبب تسميته في الثقافة.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 planet" style="background-image: url('./img/earth.jpg');">
+            <div class="content">
+                <h3>الأرض</h3>
+                <p>الأرض هو الكوكب الثالث ويعتبر موطن الحياة.</p>
+                <button class="btn btn-light" onclick="toggleInfo('earth-info')">عرض المزيد</button>
+                <div id="earth-info" class="more-info" style="display: none;">
+                    <p><strong>المزيد عن الأرض:</strong></p>
+                    <p>الأرض هي الكوكب الوحيد المعروف بوجود الحياة. تغطي المياه حوالي 71% من سطح الأرض، وتحتوي على غلاف جوي مكون من 78% نيتروجين و21% أكسجين. الأرض تستضيف مجموعة متنوعة من البيئات والأنظمة البيئية.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 planet" style="background-image: url('./img/mars.webp');">
+            <div class="content">
+                <h3>المريخ</h3>
+                <p>المريخ هو رابع كوكب من حيث البعد عن الشمس.</p>
+                <button class="btn btn-light" onclick="toggleInfo('mars-info')">عرض المزيد</button>
+                <div id="mars-info" class="more-info" style="display: none;">
+                    <p><strong>المزيد عن المريخ:</strong></p>
+                    <p>المريخ يعرف باسم الكوكب الأحمر بسبب وجود أكسيد الحديد على سطحه. له جو رقيق يتكون من ثاني أكسيد الكربون، وهو موطن لأعلى جبل (مونت أوليمبوس) وأكبر وادٍ (فالس ماريتيم) في النظام الشمسي.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 planet" style="background-image: url('./img/jupiter.jpg');">
+            <div class="content">
+                <h3>المشتري</h3>
+                <p>المشتري هو أكبر كوكب في النظام الشمسي.</p>
+                <button class="btn btn-light" onclick="toggleInfo('jupiter-info')">عرض المزيد</button>
+                <div id="jupiter-info" class="more-info" style="display: none;">
+                    <p><strong>المزيد عن المشتري:</strong></p>
+                    <p>المشتري هو عملاق غازي ويمتلك أكثر من 75 قمراً، بما في ذلك غانيميد، أكبر قمر في النظام الشمسي. يشتهر بجوه العاصف وبقعته الحمراء، التي هي عاصفة ضخمة تدور منذ قرون.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 planet" style="background-image: url('./img/saturn.jpg');">
+            <div class="content">
+                <h3>زحل</h3>
+                <p>زحل معروف بحلقاته الجميلة.</p>
+                <button class="btn btn-light" onclick="toggleInfo('saturn-info')">عرض المزيد</button>
+                <div id="saturn-info" class="more-info" style="display: none;">
+                    <p><strong>المزيد عن زحل:</strong></p>
+                    <p>زحل هو الكوكب الثاني أكبرًا في النظام الشمسي ويشتهر بحلقاته الواسعة، التي تتكون بشكل أساسي من جليد وصخور. يمتلك زحل أكثر من 80 قمراً، بما في ذلك تيتان، أكبر قمر له والذي يحتوي على غلاف جوي.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 planet" style="background-image: url('./img/uranus.jpg');">
+            <div class="content">
+                <h3>أورانوس</h3>
+                <p>أورانوس هو الكوكب السابع ويتميز بلونه الأزرق المخضر.</p>
+                <button class="btn btn-light" onclick="toggleInfo('uranus-info')">عرض المزيد</button>
+                <div id="uranus-info" class="more-info" style="display: none;">
+                    <p><strong>المزيد عن أورانوس:</strong></p>
+                    <p>أورانوس هو الكوكب الوحيد الذي يدور على جانبه، مما يمنحه طابعًا فريدًا. يحتوي على نظام حلقات ضعيف ويشتهر بلونه الأزرق الناتج عن غاز الميثان في جوه.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 planet" style="background-image: url('./img/neptune.jpg');">
+            <div class="content">
+                <h3>نبتون</h3>
+                <p>نبتون هو أبعد كوكب عن الشمس.</p>
+                <button class="btn btn-light" onclick="toggleInfo('neptune-info')">عرض المزيد</button>
+                <div id="neptune-info" class="more-info" style="display: none;">
+                    <p><strong>المزيد عن نبتون:</strong></p>
+                    <p>نبتون هو كوكب غازي معروف بألوانه الزرقاء الداكنة وبالعواصف القوية. لديه 14 قمرًا، وأكبرها تريتون، الذي يتحرك في اتجاه عكسي عن بقية الأقمار.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Achref Saidi. جميع الحقوق محفوظة.</p>
+    </footer>
+<script>
+    function toggleInfo(planetId) {
+        const infoDiv = document.getElementById(planetId);
+        if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
